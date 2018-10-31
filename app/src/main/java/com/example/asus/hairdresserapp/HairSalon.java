@@ -56,4 +56,8 @@ public class HairSalon {
     public void setId(int id) {
         this.id = id;
     }
+
+    public String toString(){
+        return name;
+    }
 }
