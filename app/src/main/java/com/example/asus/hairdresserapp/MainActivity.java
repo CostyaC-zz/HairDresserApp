@@ -11,7 +11,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private HairSalonViewModel hairSalonViewModel;
     private TextView text;
 
     @Override
@@ -20,16 +19,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         text = findViewById(R.id.textView);
-
-        hairSalonViewModel = ViewModelProviders.of(this).get(HairSalonViewModel.class);
-        hairSalonViewModel.insert(new HairSalon("name", "aa", "yes", "no", "niesu", "da"));
-        hairSalonViewModel.getSalons().observe(this, new Observer<List<HairSalon>>() {
-            @Override
-            public void onChanged(List<HairSalon> hairSalons) {
-                //update recycler view
-
-                text.setText(hairSalonViewModel.getSalons().getValue().get(0).toString());
-            }
-        });
     }
 }
