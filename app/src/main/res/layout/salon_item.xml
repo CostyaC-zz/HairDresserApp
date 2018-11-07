@@ -17,6 +17,9 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:ellipsize="end"/></RelativeLayout>
+            android:ellipsize="end"/>
+
+
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
