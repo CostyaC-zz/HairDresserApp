@@ -5,23 +5,23 @@ import java.util.List;
 
 public class SalonRegistration {
 
-    private ArrayList<HairSalon> salons;
+    private ArrayList<HairSalon> salonss;
     private HairSalonViewModel viewModel;
 
     public SalonRegistration() {
 
-        this.salons = new ArrayList<>();
+        this.salonss = new ArrayList<>();
 
     }
 
     public ArrayList<HairSalon> getSalons() {
 
-        return salons;
+        return salonss;
     }
 
     public HairSalon[] getAllSalons() {
 
-        return salons.toArray(new HairSalon[salons.size()]);
+        return salonss.toArray(new HairSalon[salonss.size()]);
 
     }
 
